@@ -1,0 +1,157 @@
+{
+  "app": {
+    "title": "Smart OMR Exam Scanner",
+    "subtitle": "Fast and precise bubble sheet grading via mobile camera and image upload",
+    "teacherPortal": "Teacher Examination Portal"
+  },
+  "nav": {
+    "dashboard": "Exams Dashboard",
+    "newExam": "Create New Exam",
+    "results": "Scores & Analytics",
+    "logout": "Sign Out",
+    "userRole": "Teacher / Instructor",
+    "themeWhiteBlue": "White-Blue Contrast Theme"
+  },
+  "auth": {
+    "title": "Instructor Login",
+    "subtitle": "Sign in to manage exams, print sheets, and grade answer sheets",
+    "emailLabel": "Academic Email",
+    "emailPlaceholder": "teacher@university.ac.th",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "••••••••",
+    "loginButton": "Sign In to Portal",
+    "demoHint": "💡 Mock Auth Trial: You can enter any email to start exploring.",
+    "featuresList": [
+      "100% Client-side Computer Vision Engine",
+      "Standard A4 Printable Sheets with Corner Markers",
+      "One-click CSV and PDF Class Reports Export"
+    ]
+  },
+  "dashboard": {
+    "title": "Examination Sets",
+    "subtitle": "Manage exam keys, print templates, scan sheets, and analyze results",
+    "createNew": "Create New Exam",
+    "searchPlaceholder": "Search by subject name or code...",
+    "totalExams": "Total Exams",
+    "totalScanned": "Total Sheets Graded",
+    "avgClassScore": "Overall Average",
+    "noExamsTitle": "No examination sets found",
+    "noExamsSubtitle": "Start by creating your first exam set, configure the answer key, and print answer sheets.",
+    "noExamsAction": "Create First Exam Now",
+    "card": {
+      "questions": "Questions",
+      "choices": "Choices",
+      "style": "Option Style",
+      "scannedCount": "Graded",
+      "sheets": "sheets",
+      "actions": {
+        "printSheet": "Print Sheet",
+        "scanSheet": "Scan & Grade",
+        "viewResults": "View Results",
+        "editKey": "Edit Key",
+        "deleteExam": "Delete"
+      }
+    }
+  },
+  "examForm": {
+    "createTitle": "Create New Exam",
+    "createSubtitle": "Configure subject information, question count, and answer key",
+    "basicInfo": "Subject Details",
+    "subjectName": "Subject Name",
+    "subjectNamePlaceholder": "e.g., Advanced Web Programming",
+    "subjectCode": "Subject Code",
+    "subjectCodePlaceholder": "e.g., CS301 / CPE202",
+    "examTitle": "Exam Title / Session",
+    "examTitlePlaceholder": "e.g., Midterm Exam Semester 1/2026",
+    "configHeader": "Answer Sheet Layout",
+    "totalQuestions": "Total Questions",
+    "questionsUnit": "items",
+    "choicesPerQuestion": "Choices per Question",
+    "choiceStyle": "Choice Symbol Style",
+    "layoutDetected": "Auto-selected Layout Grid",
+    "layoutDesc": {
+      "SM": "Small Layout (1 Column, Large Bubbles, optimal for 1-30 items)",
+      "MD": "Medium Layout (2 Columns, Balanced, optimal for 31-60 items)",
+      "LG": "Large Layout (3 Columns, Comprehensive, optimal for 61-100 items)"
+    },
+    "answerKeyHeader": "Answer Key Configuration",
+    "answerKeySubtitle": "Select the correct option for each question",
+    "quickFill": "Quick Fill",
+    "fillAll": "Set all to",
+    "resetAll": "Reset All",
+    "submitCreate": "Save & Create Exam",
+    "saveSuccess": "Exam created successfully!"
+  },
+  "sheet": {
+    "title": "Print Standard Answer Sheet",
+    "subtitle": "Download A4 PDF format to print and distribute to students",
+    "downloadPdf": "Download Answer Sheet (PDF)",
+    "printDirect": "Print Now",
+    "instructionsTitle": "Important Printing & Usage Instructions",
+    "instructions": [
+      "Print at 100% scale (Actual Size) on standard A4 paper. Do not select 'Fit to Page'.",
+      "Ensure all 4 black corner alignment markers are printed completely and clearly.",
+      "Students must fill bubbles firmly using a 2B pencil or dark black/blue pen.",
+      "Students must bubble-encode their 8-digit Student ID in the designated grid."
+    ],
+    "previewTitle": "Generated Sheet Preview"
+  },
+  "scanner": {
+    "title": "Scan & Grade Answer Sheet",
+    "subtitle": "Use camera capture or upload high-resolution images",
+    "tabCamera": "📷 Camera Live Scan",
+    "tabUpload": "📁 Upload Image File",
+    "cameraGuide": "Align the entire answer sheet with all 4 corner markers inside the viewfinder frame",
+    "captureButton": "Capture & Process",
+    "switchCamera": "Switch Camera",
+    "dragDropText": "Drag & drop answer sheet image here, or click to browse",
+    "fileSupported": "Supports JPG, PNG, WEBP (Recommended resolution: 1080p or higher)",
+    "processing": "Processing Computer Vision Pipeline...",
+    "steps": {
+      "preprocessing": "Contrast normalization and binarization",
+      "cornerDetection": "Detecting 4 corner alignment markers",
+      "perspective": "Applying perspective de-skew correction",
+      "sampling": "Sampling bubble grids for Student ID and Answers",
+      "grading": "Auto-evaluating against Answer Key"
+    },
+    "errorTitle": "Unable to read answer sheet",
+    "errorRetake": "Take New Photo / Try Again",
+    "tipsTitle": "Tips for accurate scanning:"
+  },
+  "review": {
+    "title": "Review & Verify Scan",
+    "subtitle": "The system extracted the student ID and answers. Review and adjust if necessary.",
+    "studentIdLabel": "Decoded Student ID",
+    "scoreSummary": "Score",
+    "percentage": "Percentage",
+    "ambiguousNotice": "⚠️ Multiple bubbles were filled in some questions. Scored 0 per policy (Editable).",
+    "legendCorrect": "Correct (Matches Key)",
+    "legendIncorrect": "Incorrect",
+    "legendAmbiguous": "Ambiguous / 0 pts",
+    "saveConfirm": "Confirm & Save Score",
+    "scanNext": "Scan Next Sheet",
+    "viewResults": "View Class Dashboard"
+  },
+  "results": {
+    "title": "Class Results & Analytics",
+    "subtitle": "Comprehensive score overview, student table, and question item analysis",
+    "totalStudents": "Total Graded",
+    "classAverage": "Class Average",
+    "highestScore": "Highest Score",
+    "lowestScore": "Lowest Score",
+    "passRate": "Passing Rate (≥60%)",
+    "exportCsv": "Export Full CSV",
+    "exportPdf": "Export PDF Report",
+    "scoreDistribution": "Score Distribution Histogram",
+    "itemAnalysis": "Item Analysis & Question Difficulty",
+    "table": {
+      "studentId": "Student ID",
+      "score": "Total Score",
+      "percentage": "Percentage (%)",
+      "grade": "Grade",
+      "status": "Status",
+      "scannedAt": "Timestamp",
+      "actions": "Actions"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 70% White / Crisp Light Palette, 30% Rich Royal Blue Accent */
+    --background: 210 40% 98%;      /* #F8FAFC - clean light slate canvas */
+    --foreground: 222 47% 11%;      /* #0F172A - deep navy readable text */
+
+    --card: 0 0% 100%;             /* #FFFFFF - 70% white surface */
+    --card-foreground: 222 47% 11%;/* #0F172A */
+
+    --popover: 0 0% 100%;          /* #FFFFFF */
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 221 83% 47%;        /* #1D4ED8 / Blue-700 high-contrast royal blue */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    --primary-hover: 224 76% 40%;   /* #1E40AF */
+
+    --secondary: 214 32% 91%;      /* #E2E8F0 - subtle slate secondary */
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96.1%;        /* #F1F5F9 */
+    --muted-foreground: 215 16% 47%;/* #64748B */
+
+    --accent: 214 100% 97%;        /* #EFF6FF - soft blue tint */
+    --accent-foreground: 221 83% 47%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;         /* #E2E8F0 */
+    --input: 214 32% 91%;
+    --ring: 221 83% 53%;           /* Focus ring blue */
+
+    --radius: 0.625rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased selection:bg-brand-100 selection:text-brand-900;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
